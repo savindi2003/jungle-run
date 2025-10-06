@@ -1,0 +1,385 @@
+    .body {
+        margin: 0px;
+    }
+    
+    .background {
+        width: 100%;
+        height: 100vh;
+        background-image: url("resources/background.jpg");
+        background-size: cover;
+        background-repeat: repeat-x;
+        overflow: hidden;
+        position: absolute;
+    }
+    
+    .background1 {
+        width: 100%;
+        height: 100vh;
+        background-image: url("resources/background1.jpg");
+        background-size: cover;
+        background-repeat: repeat-x;
+        position: absolute;
+        overflow: hidden;
+        background-position-y: -10px;
+    }
+    
+    .background2 {
+        width: 100%;
+        height: 100vh;
+        background-image: url("resources/background2.png");
+        background-size: cover;
+        background-repeat: repeat;
+        position: absolute;
+        overflow: hidden;
+        background-position-y: -130px;
+    }
+    
+    .background3 {
+        width: 100%;
+        height: 100vh;
+        background-image: url("resources/background3.png");
+        background-size: cover;
+        background-repeat: repeat-x;
+        position: absolute;
+        overflow: hidden;
+        background-position-y: -120px;
+    }
+    
+    @font-face {
+        font-family: "RubikMoonrocks";
+        src: url("RubikMoonrocks-Regular.ttf");
+    }
+    
+    @font-face {
+        font-family: "TitanOne";
+        src: url("TitanOne-Regular.ttf");
+    }
+    
+    .name {
+        width: 100%;
+        margin-top: 15%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        margin-left: 11%;
+        transform: scale(1.1);
+        /* color: rgb(32, 167, 71);
+        text-align: center;
+        font-family: "RubikMoonrocks";
+        font-size: 180px;
+        text-shadow: 10px 10px rgb(13, 79, 4);
+        -webkit-text-stroke: 2px rgb(2, 122, 0);*/
+    }
+    
+    .playbtn {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 26%;
+        background-repeat: no-repeat;
+        opacity: 0.8;
+        transform: scale(0.3);
+        margin-left: 180px;
+    }
+    
+    .alert1 {
+        width: 500px;
+        height: 60px;
+        background-image: linear-gradient(rgb(157, 255, 157), rgb(255, 255, 190));
+        color: rgb(3, 186, 39);
+        font-size: 30px;
+        padding-top: 20px;
+        text-align: center;
+        font-family: "TitanOne";
+        margin-left: 32%;
+        border-radius: 20px;
+        box-shadow: 7px 7px 7px 7px green;
+        opacity: 0.7;
+        position: absolute;
+        margin-top: 20%;
+        visibility: hidden;
+    }
+    
+    .alert2 {
+        width: 500px;
+        height: 60px;
+        background-image: linear-gradient(rgb(157, 255, 157), rgb(255, 255, 190));
+        color: rgb(3, 186, 39);
+        font-size: 30px;
+        padding-top: 20px;
+        text-align: center;
+        font-family: "TitanOne";
+        margin-left: 32%;
+        border-radius: 20px;
+        box-shadow: 7px 7px 7px 7px green;
+        opacity: 0.7;
+        position: absolute;
+        margin-top: 20%;
+        visibility: hidden;
+    }
+    
+    .playbtn:hover {
+        opacity: 1;
+        transform: scale(0.32);
+    }
+    
+    .footer {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font-family: "Courier New";
+        font-weight: bold;
+        margin-top: 42%;
+    }
+    
+    .girl {
+        height: 250px;
+        margin-top: 430px;
+        margin-left: 250px;
+        visibility: hidden;
+        position: absolute;
+    }
+    
+    .girl1 {
+        height: 450px;
+        margin-top: 360px;
+        margin-left: 100px;
+        visibility: visible;
+        position: absolute;
+        transform: scale(0.8);
+    }
+    
+    .box {
+        width: 100px;
+        height: 100px;
+        background-image: url("resources/snake.gif");
+        /* background-color: black;*/
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 580px;
+        position: absolute;
+        transform: scale(1);
+    }
+    
+    .goonussa {
+        width: 100px;
+        height: 100px;
+        background-image: url("resources/goonussa.gif");
+        /* background-color: black;*/
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 580px;
+        position: absolute;
+        transform: scale(1);
+    }
+    
+    .mushroom {
+        width: 100px;
+        height: 100px;
+        background-image: url("resources/mushroom.gif");
+        /* background-color: black;*/
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 590px;
+        position: absolute;
+        transform: scale(1);
+    }
+    
+    .gameOverText {
+        width: 1300px;
+        height: 900px;
+        background-image: url("resources/gameover.png");
+        /*  background-size: cover;*/
+        background-repeat: no-repeat;
+        position: absolute;
+        visibility: hidden;
+        transform: scale(0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 230px;
+        margin-top: -50px;
+        transition-duration: 5s;
+    }
+    
+    .scoreframe {
+        width: 900px;
+        height: 500px;
+        background-image: url("resources/scoreBoard.png");
+        background-repeat: no-repeat;
+        text-align: center;
+        transform: scale(0.4);
+        visibility: hidden;
+        position: absolute;
+        margin-top: -170px;
+        margin-left: -260px;
+    }
+    
+    .score {
+        font-size: 200px;
+        margin-left: 50px;
+        margin-top: 100px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        visibility: hidden;
+        position: absolute;
+        color: rgba(99, 35, 3, 0.827);
+        -webkit-text-stroke: 2px rgb(0, 0, 0);
+        text-shadow: 1px 1px rgb(0, 0, 0);
+    }
+    
+    .div1 {
+        /*mute button*/
+        width: 80px;
+        height: 80px;
+        background-image: url("resources/mutebtn.png");
+        margin-left: 1460px;
+        margin-top: 5px;
+        position: absolute;
+        background-size: cover;
+        visibility: hidden;
+        transform: scale(1);
+    }
+    
+    .div1:hover {
+        transform: scale(1.1);
+    }
+    
+    .div2 {
+        /*background music play button*/
+        width: 80px;
+        height: 80px;
+        background-image: url("resources/soundOn.png");
+        margin-left: 1460px;
+        margin-top: 85px;
+        position: absolute;
+        background-size: cover;
+        visibility: hidden;
+        transform: scale(1);
+    }
+    
+    .div2:hover {
+        transform: scale(1.1);
+    }
+    
+    .menu {
+        width: 800px;
+        height: 800px;
+        margin-left: 400px;
+        background-image: url("resources/menulist.png");
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: contain;
+        visibility: hidden;
+        opacity: 1;
+    }
+    
+    .topic {
+        width: 700px;
+        height: 200px;
+        margin-left: 45px;
+        background-size: cover;
+        background-image: url("resources/toipc.png");
+        background-repeat: no-repeat;
+        position: absolute;
+        transform: scale(0.8);
+        justify-content: center;
+    }
+    
+    .bg1 {
+        /*background 1 */
+        width: 1000px;
+        height: 550px;
+        background-image: url("resources/bg1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        justify-content: center;
+        transform: scale(0.3);
+        margin-left: -270px;
+    }
+    
+    .bg1:hover {
+        transform: scale(0.35);
+    }
+    
+    .bg2 {
+        /*background 2 */
+        width: 1000px;
+        height: 550px;
+        background-image: url("resources/bg2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        justify-content: center;
+        transform: scale(0.3);
+        margin-left: 75px;
+    }
+    
+    .bg2:hover {
+        transform: scale(0.35);
+    }
+    
+    .bg3 {
+        /* background 3*/
+        width: 1000px;
+        height: 550px;
+        background-image: url("resources/bg3.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        justify-content: center;
+        transform: scale(0.3);
+        margin-top: 180px;
+        margin-left: -80px;
+    }
+    
+    .bg3:hover {
+        transform: scale(0.35);
+    }
+    
+    .div3 {
+        width: 100px;
+        height: 100px;
+        background-image: url("resources/menu.png");
+        margin-left: 1400px;
+        margin-top: 5px;
+        position: absolute;
+        background-size: cover;
+        visibility: visible;
+    }
+    
+    .div3:hover {
+        transform: scale(1.1);
+    }
+    
+    .win {
+        width: 1300px;
+        height: 900px;
+        transform: scale(0.6);
+        background-image: url("resources/win.png");
+        position: absolute;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 230px;
+        margin-top: -50px;
+        visibility: hidden;
+    }
+    
+    .malvedi {
+        width: 500px;
+        height: 500px;
+        background-image: url("resources/malvedi.gif");
+        background-repeat: no-repeat;
+        margin-left: 750px;
+        margin-top: 70px;
+        position: absolute;
+        visibility: hidden;
+    }

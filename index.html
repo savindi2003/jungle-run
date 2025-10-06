@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Final Game</title>
+    <link rel="stylesheet" href="style.CSS" />
+</head>
+
+<body class="body" onkeyup="keyCheck(event);">
+
+    <div class="background" id="background">
+
+        <div id="name" class="name">
+            <img src="resources/name.png">
+        </div>
+
+        <div id="playbtn" class="playbtn">
+            <img src="resources/playbutton.png" onclick="clickButton()" ;/>
+        </div>"
+
+        <div class="scoreframe" id="scoreframe">
+            <h1 class="score" id="score"> 0</h1>
+        </div>
+
+        <div class="div1" id="mute" onclick="muteSound();"></div>
+        <div class="div2" id="soundon" onclick="playSound();"></div>
+        <div class="div3" id="menu" onclick="changeMenu();"></div>
+        <img src="resources/Idle (1).png" class="girl1" id="girl1" />
+        <img src="resources/Idle (1).png" class="girl" id="girl" />
+        <div id="gameOverText" class="gameOverText"></div>
+        <div id="win" class="win"></div>
+        <div id="malvedi" class="malvedi"></div>
+
+
+
+
+        <div id="footer" class="footer">
+            <div> <span> Develop By : Savindi Duleesha       </span>
+            </div> <br/>
+            <div> <span> &copy; Java Institute 2022           </span> </div>
+        </div>
+
+        <div class="menu" id="menulist">
+            <div class="topic" id="menuTopic"></div>
+            <div class="bg1" id="bg1" onclick="bg1();"></div>
+            <div class="bg2" id="bg2" onclick="bg2();"></div>
+            <div class="bg3" id="bg3" onclick="bg3();"></div>
+        </div>
+
+        <div class="alert1" id="alert1">Press ENTER key to start RUN</div>
+        <div class="alert2" id="alert2">Press SPACE key to start JUMP</div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
